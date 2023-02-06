@@ -100,7 +100,7 @@ const Register = () => {
 
   useEffect(()=>{
     if(isSuccess && isLoggedin){
-      navigate("/")
+      navigate("/profile")
     
     }
     console.log("james");
