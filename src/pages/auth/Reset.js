@@ -61,7 +61,10 @@ const Reset = () => {
       }
       return timesIcon;
     };
-  const handleInputChange = () => {};
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
   const reset = async(e) => {
     e.preventDefault();
     if ( !password2 || !password) {
